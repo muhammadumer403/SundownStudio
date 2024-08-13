@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunshine-Down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="overflow-x-hidden max-w-screen relative">
+    <div class="loader bg-black w-screen h-screen fixed top-0 z-[99] -translate-y-[0%] transtion-all duration-700">
+      <h1 class="text-[6vmax] font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">Experiences</h1>
+      <h1 class="text-[6vmax] font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">Contact</h1>
+      <h1 class="text-[6vmax] font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">Environments</h1>
+    </div>
+    <main class="relative font-[gilroy] z-[3] overflow-x-hidden hidden">
+      <div
+        class="navigation w-screen h-screen -translate-y-[100%] fixed top-0 left-0 bg-[#00000096] z-[8] md:hidden transtion duration-300"
+      >
+        <div
+          class="contain bg-[#EFEAE3] px-7 rounded-br-3xl rounded-bl-3xl py-3 text-end absolute top-[6%] w-full"
+        >
+          <h5 class="text-5xl font-bold">Work</h5>
+          <h5 class="text-5xl font-bold">Studio</h5>
+          <h5 class="text-5xl font-bold">Contact</h5>
+        </div>
+      </div>
+      <div
+        class="page1 min-h-[100vh] bg-[#EFEAE3] px-8 py-10 relative w-screen overflow-x-hidden"
+      >
+        <nav
+          class="flex justify-between items-center absolute md:static w-screen md:w-full md:mx-auto px-5 py-2 bg-[#EFEAE3] z-[99] top-0 left-0"
+        >
+          <img
+            src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+            alt=""
+            class="md:w-[10vmax] w-[8vmax]"
+          />
+          <div id="navpart-2" class="links text-xl gap-5 flex">
+            <h4
+              class="border-[1px] border-zinc-300 relative hidden md:block rounded-full px-6 py-2"
+            >
+              <a href="#">Work</a>
+            </h4>
+            <h4
+              class="border-[1px] border-zinc-300 relative hidden md:block rounded-full px-6 py-2"
+            >
+              <a href="#">Studio</a>
+            </h4>
+            <h4
+              class="border-[1px] border-zinc-300 relative hidden md:block rounded-full px-6 py-2"
+            >
+              <a href="#">Contact</a>
+            </h4>
+            <h4
+              id="menu"
+              class="border-[1px] border-zinc-300 relative block md:hidden rounded-full px-6 py-2 text-xs"
+            >
+              <a href="#">Menu</a>
+            </h4>
+          </div>
+        </nav>
+        <div
+          class="center flex max-w-screen justify-between mt-10 flex-col md:flex-row items-end md:h-[75vh] h-[70vh] py-10 border-b-[1px] border-zinc-300 pb-20"
+        >
+          <div class="left">
+            <h5
+              class="md:text-4xl text-xl font-bold leading-none tracking-tight w-full md:w-[28vw]"
+            >
+              Sundown is a multi-disciplinary studio focused on creating unique,
+              end-to-end experiences and environments.
+            </h5>
+          </div>
+          <div class="right">
+            <h1
+              class="md:text-[10vmax] text-[10vmax] text-center leading-[7.8vmax] font-bold uppercase md:text-end"
+            >
+              spaces <br />
+              that <br />
+              inspire
+            </h1>
+          </div>
+        </div>
+        <div class="hero-shape w-full md:w-[30vw] md:h-[30vw]">
+          <div
+            class="hero hero-1 md:w-[30vmax] md:h-[20vmax] h-[30vmax] w-[40vmax]"
+          ></div>
+          <div
+            class="hero hero-2 md:w-[30vmax] md:h-[20vmax] h-[30vmax] w-[40vmax]"
+          ></div>
+          <div
+            class="hero hero-3 md:w-[30vmax] md:h-[20vmax] h-[30vmax] w-[40vmax]"
+          ></div>
+        </div>
+        <div class="video md:h-screen h-[40vh] relative">
+          <video
+            autoplay
+            loop
+            muted
+            class="w-full relative absolute z-[4] h-full object-cover rounded-lg"
+            src="./video.mp4"
+          ></video>
+        </div>
+      </div>
+      <div
+        class="page2 bg-[#EFEAE3] md:pt-20 md:pb-10 pt-5 pb-0 min-h-screen relative w-screen"
+      >
+        <div
+          class="marquee-wrapper whitespace-nowrap flex overflow-x-hidden overflow-y-hidden"
+        >
+          <div
+            class="cont inline-block overflow-x-hidden shrink-0 items-center whitespace-nowrap flex overflow-y-hidden px-2 animate-[moving_10s_linear_infinite]"
+          >
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Experiences
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Content
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Environments
+            </h2>
+          </div>
+          <div
+            class="cont flex shrink-0 items-center whitespace-nowrap overflow-y-hidden px-2 animate-[moving_10s_linear_infinite]"
+          >
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Experiences
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Content
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Environments
+            </h2>
+          </div>
+          <div
+            class="cont flex shrink-0 items-center whitespace-nowrap overflow-y-hidden px-2 animate-[moving_10s_linear_infinite]"
+          >
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Experiences
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Content
+            </h2>
+            <div
+              class="gola w-[3vmax] h-[3vmax] rounded-full bg-[#fe330b] inline-block mx-5"
+            ></div>
+            <h2
+              class="text-[8vmax] md:text-[10vmax] leading-none font-semibold tracking-tighter uppercase inline-block"
+            >
+              Environments
+            </h2>
+          </div>
+        </div>
+        <div
+          class="content md:h-screen h-[70vh] flex items-center relative z-40"
+        >
+          <div
+            class="center flex justify-between md:px-2 md:px-20 h-[60vh] bg items-end absolute z-10 flex-col items-center md:flex-row"
+          >
+            <div class="left w-[90%] md:w-[47vw] md:mb-auto">
+              <h1
+                class="md:text-[3.7vmax] text-[2.5vmax] w-[85vw] ml-[2vw] md:mx-0 mb-10 md:mb-0 md:w-full tracking-tighter leading-none font-bold md:text-start text-center"
+              >
+                We are a group of design-driven, goal-focused creators,
+                producers, and designers who believe that the details make all
+                the difference.
+              </h1>
+            </div>
+            <div
+              class="right w-screen md:w-[43vw] flex w-fit mx-auto flex-col md:items-end gap-10 md:ml-0 ml-[1.5vmax]"
+            >
+              <div class="img w-[85%] md:w-[40%] md:mx-0 ml-[2vw] mx-auto">
+                <img
+                  class="w-full object-cover rounded-lg"
+                  src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="para w-[85%] md:w-[40%] md:mx-0 ml-[2vw] mx-auto md:text-start text-center"
+              >
+                <p class="leading-md">
+                  We love to create, we love to solve, we love to collaborate,
+                  and we love to turn amazing ideas into reality. We’re here to
+                  partner with you through every step of the process and know
+                  that relationships are the most important things we build.
+                  featured projects
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page2-shape z-[3]">
+          <div class="shape shape-1"></div>
+        </div>
+      </div>
+      <div
+        class="page3 bg-[#EFEAE3] py-10 w-screen relative h-fit hidden md:block"
+      >
+        <div class="title px-14 hidden md:block">
+          <h2
+            class="uppercase before:content-[''] before:absolute relative before:w-2 before:h-2 before:bg-[#fe330b] before:top-1/2 before:-translate-y-1/2 before:-left-[1%] before:rounded-full font-semibold"
+          >
+            featured projects
+          </h2>
+        </div>
+        <div class="elems md:flex flex-col hidden">
+          <div
+            class="elem relative border-b-[1px] border-zinc-400"
+            data-img="https://images.unsplash.com/photo-1532103054090-3491f1a05d0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJuJTIwZGVzaWdufGVufDB8fDB8fHww"
+          >
+            <div
+              class="content relative z-30 flex justify-between items-center py-10 px-10"
+            >
+              <div class="left">
+                <h1 class="text-6xl font-bold tracking-tight">Converse SoHo</h1>
+              </div>
+              <div class="right text-end">
+                <h5 class="font-semibold">Converse</h5>
+                <h5 class="opacity-[0.7]">Environment</h5>
+              </div>
+            </div>
+            <div
+              class="light absolute top-0 left-0 bg-orange-400 w-full h-0"
+            ></div>
+          </div>
+          <div
+            class="elem relative border-b-[1px] border-zinc-400"
+            data-img="https://images.unsplash.com/photo-1530051381876-8a8a8eb0ff05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZXJuJTIwZGVzaWdufGVufDB8fDB8fHww"
+          >
+            <div
+              class="content relative z-[3] flex justify-between items-center py-10 px-10"
+            >
+              <div class="left">
+                <h1 class="text-6xl font-bold tracking-tight">
+                  Play New Kidvison
+                </h1>
+              </div>
+              <div class="right text-end">
+                <h5 class="font-semibold">Nike</h5>
+                <h5 class="opacity-[0.7]">Environment</h5>
+              </div>
+            </div>
+            <div
+              class="light absolute top-0 left-0 bg-orange-400 w-full h-0"
+            ></div>
+          </div>
+          <div
+            class="elem relative border-b-[1px] border-zinc-400"
+            data-img="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVybiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+          >
+            <div
+              class="content relative z-[3] flex justify-between items-center py-10 px-10"
+            >
+              <div class="left">
+                <h1 class="text-6xl font-bold tracking-tight">NYFW Popup</h1>
+              </div>
+              <div class="right text-end text-end">
+                <h5 class="font-semibold uppercase">Afterpay</h5>
+                <h5 class="opacity-[0.7]">Experimental</h5>
+              </div>
+            </div>
+            <div
+              class="light absolute top-0 left-0 bg-orange-400 w-full h-0"
+            ></div>
+          </div>
+          <div
+            class="elem relative border-b-[1px] border-zinc-400"
+            data-img="https://images.unsplash.com/photo-1535799695145-f3849086ee3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVybiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+          >
+            <div
+              class="content relative z-[3] flex justify-between items-center py-10 px-10"
+            >
+              <div class="left">
+                <h1 class="text-6xl font-bold tracking-tight">
+                  50th Anniversary
+                </h1>
+              </div>
+              <div class="right text-end">
+                <h5 class="font-semibold">Nike</h5>
+                <h5 class="opacity-[0.7]">Environment</h5>
+              </div>
+            </div>
+            <div
+              class="light absolute top-0 left-0 bg-orange-400 w-full h-0"
+            ></div>
+          </div>
+          <div
+            class="elem relative border-b-[1px] border-zinc-400"
+            data-img="https://images.unsplash.com/photo-1530036846422-afb4b7af2fd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fG1vZGVybiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+          >
+            <div
+              class="content relative z-[3] flex justify-between items-center py-10 px-10"
+            >
+              <div class="left">
+                <h1 class="text-6xl font-bold tracking-tight">
+                  Capezio NYC Flagship
+                </h1>
+              </div>
+              <div class="right text-end">
+                <h5 class="font-semibold">Capezio</h5>
+                <h5 class="opacity-[0.7]">Environment</h5>
+              </div>
+            </div>
+            <div
+              class="light absolute top-0 left-0 bg-orange-400 w-full h-0"
+            ></div>
+          </div>
+        </div>
+        <div class="btn px-10 mt-20 hidden md:inline-block">
+          <h4
+            class="relative border-zinc-300 border-[1px] w-fit px-6 text-xl py-2 rounded-full"
+          >
+            <a href="">All Projects <span class="pl-3">&#x2192;</span></a>
+          </h4>
+        </div>
+        <div
+          class="img w-[20vw] h-[30vmax] rounded-3xl fixed top-[50%] left-2/3 -translate-y-1/2 -translate-x-1/2 hidden z-[2]"
+        >
+          <img class="object-cover h-full w-full" src="" alt="" />
+        </div>
+      </div>
+      <div class="page4 bg-[#EFEAE3] py-10 relative">
+        <div
+          class="cont md:h-[120vh] h-[100vh] flex-col md:flex-row w-[90vw] ml-[3vw] bg-black rounded-3xl flex items-center overflow-hidden pt-10 md:pt-0"
+        >
+          <div
+            class="left md:w-3/5 w-full text-white md:h-fit h-1/2 flex flex-col md:items-center px-5 "
+          >
+            <div class="headings flex flex-col md:w-1/2 mb-10 md:ml-2">
+              <h5
+                class="md:text-6xl text-4xl text-[#EFEAE3] font-bold border-l-4 cursor-pointer border-[#fe330b] px-5 py-2"
+              >
+                Design
+              </h5>
+              <h5
+                class="md:text-6xl text-4xl text-zinc-500 font-bold border-l-4 cursor-pointer border-zinc-500 px-5 py-2"
+              >
+                Project
+              </h5>
+              <h5
+                class="md:text-6xl text-4xl text-zinc-500 font-bold border-l-4 cursor-pointer border-zinc-500 px-5 py-2"
+              >
+                Execution
+              </h5>
+            </div>
+            <div class="paras md:w-1/2 w-5/6 relative text-sm md:text-base">
+              <p class="transtion-opacity duration-300 absolute" data-para="0">
+                Our team works with our clients to refine an idea and concept
+                into an executable design. We create a final design that
+                encompasses the brand narrative to bring stories to life and
+                provide end-to-end design solutions from concept, design, and
+                architectural drawings to 3D renderings.
+              </p>
+              <p
+                class="transtion-opacity duration-300 absolute opacity-0"
+                data-para="1"
+              >
+                Once we have a design, our production team takes the lead in
+                bringing it to life. We manage all stages of the project, from
+                build specifications and technical drawings to site surveys,
+                vendor management, and 2D & 3D production. We have an extensive
+                network of partners to meet each unique design and project need.
+              </p>
+              <p
+                class="transtion-opacity duration-300 absolute opacity-0"
+                data-para="2"
+              >
+                We’re with you every step of the way, from the project
+                initiation to launch day. Our production and design teams are
+                onsite to direct and guide the process down to the last point of
+                completion, ensuring success across the built space and
+                experience.
+              </p>
+            </div>
+          </div>
+          <div
+            class="right bg-green-400 relative md:w-1/2 w-full h-1/2 md:h-full"
+          >
+            <img
+              data-image="0"
+              class="absolute object-cover h-full transtion-opacity duration-300"
+              src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-1080.jpg"
+            />
+            <img
+              data-image="1"
+              class="absolute opacity-0 object-cover h-full transtion-opacity duration-300"
+              src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d0_Project.webp"
+            />
+            <img
+              data-image="2"
+              class="absolute opacity-0 h-full transtion-opacity duration-300"
+              src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15cd_Execution-p-1080.jpg"
+            />
+          </div>
+        </div>
+        <h2
+          class="uppercase mt-20 mx-10 ml-20 before:content-[''] before:absolute relative before:w-2 before:h-2 before:bg-[#fe330b] before:top-1/2 before:-translate-y-1/2 before:-left-[5%] md:before:-left-[1%] before:rounded-full font-semibold"
+        >
+          featured projects
+        </h2>
+        <div
+          class="swiper-container cursor-none overflow-y-visible !mt-[5vmax] md:mt-0"
+        >
+          <div class="swiper mySwiper flex w-full px-5">
+            <div
+              class="crsr z-[11] absolute px-5 py-5 rounded-full bg-[#fe330b] transtion-scale opacity-0 duration-300 scale-1"
+            >
+              <h2 class="text-2xl text-zinc-100">&lt; &gt;</h2>
+            </div>
+            <div class="swiper-wrapper flex w-full px-5 z-[5]">
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/nike.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Retained Production support across retail events in NY, CHI,
+                    LA. Creative Design, Design Management, Production/Project
+                    Management, and execution of work from oncept to
+                    installation across the Country.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/converse.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Creative Concepting, Design, Design Management, Project
+                    Management, and execution of work from concept to
+                    installation across the Country. Cross functional
+                    communication and management of third party partners.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/north-face.PNG"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Creative Concepting, 2D & 3D Design, Design Management for
+                    work in NYC and across the country.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/arc.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Production and design along with install oversight and
+                    execution support for the SoHo store opening on Broadway St,
+                    New York. Also working on creative and production work for a
+                    new store opening in Glendale, California.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/hunter.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Design and Production partner for Hunter Holiday 2022 Pop-in
+                    at Nordstrom 57th St, New York, including activations in
+                    Women's, Men's and KidS zones. Thirty-five (35) additional
+                    smaller take-downs in Nordstrom stores across the US.
+                    Concept design for Holiday boot customization events in
+                    stores across winter 2022.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/media-link.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Creative, Design, and Production Partner for 2023 CES. Scope
+                    Included creation of Branding Identity, Assets, and Digital
+                    Content, Design, Production design, Production oversight and
+                    Installation of client activations for IBM, Delta,
+                    Instacart, and more.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-slide cursor-none gap-5 shrink-0 h-fit flex md:h-[12vmax] md:!w-[25vmax] !w-[40vmax] !h-[30vh] justify-between flex flex-col border-l-[0.5px] border-zinc-700"
+              >
+                <div class="img h-1/3 px-5 pt-3 w-full">
+                  <img
+                    class="h-full object-contain"
+                    src="./swipper/afterpay.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="content px-5 h-fit md:w-2/3 w-full">
+                  <p class="font-semibold">
+                    Creative, Design, and Prckiuction Partner for 2022 NY
+                    Fashion Week Pop-Up space. In Partnership with B-Reel scope
+                    including creation of Final Design, Design Assets, 3D
+                    Renders, Production design, Production/Partner oversight and
+                    creation of a two (2) story pop-up for Afterpay's clients
+                    such as Crocs, JD Sports, Container Store, & Revolve.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="footer sticky bottom-0 h-screen w-screen relative bg-black max-h-screen h-screen overflow-x-hidden"
+    >
+      <div
+        class="content flex flex-col justify-start w-full h-full items-start fixed top-0 left-0 z-[11]"
+      >
+        <div class="upper text-zinc-100 h-[50vh] w-full flex w-screen">
+          <div
+            class="left flex-col items-start justify-center w-1/2 p-4 gap-5 pl-20 hidden md:flex"
+          >
+            <h2 class="font-bold text-4xl">Work</h2>
+            <h2 class="font-bold text-4xl">Studio</h2>
+            <h2 class="font-bold text-4xl">Contact</h2>
+          </div>
+          <div
+            class="right flex flex-col items-center w-full md:w-1/2 justify-center h-full"
+          >
+            <h2 class="md:w-[38%] w-full text-center md:text-2xl ">
+              Get industry insights and creative inspiration straight to your
+              inbox.
+            </h2>
+            <input
+              placeholder="Email Adress"
+              class="border-[2px] rounded-lg w-[80vw] md:w-1/3 font-semibold text-xl border-zinc-900 py-2 px-5 bg-[#00000066] border-b-[2px] mt-5 border-b-zinc-700 outline-none w-[38%]"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="lower bg-transparent h-[50vh] flex flex-col items-start justify-end w-full z-[-1] relative"
+        >
+          <h2
+            class="text-[21.5vw] text-start text-center leading-[19vw] font-semibold text-zinc-100 pb-10 tracking-tighter"
+          >
+            Sundown
+          </h2>
+          <footer
+            class="border-t-[1px] border-zinc-700 py-3 px-5 flex w-screen md:w-[95%] justify-between text-zinc-100 md:mx-5"
+          >
+            <h2 class="hidden md:block">Copyright © Sundown Studio</h2>
+            <h2>Brooklyn, NY</h2>
+            <h2>Instagram</h2>
+            <h2>LinkedIn</h2>
+          </footer>
+        </div>
+      </div>
+      <div class="gooey-head absolute w-[100vw] -top-[3%] h-[20vh]">
+        <div class="gooey-1 gooey h-[60vh] w-[75vw] md:w-[50vw]"></div>
+
+        <div class="gooey-3 gooey h-[60vh] w-[75vw] md:w-[40vw]"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>

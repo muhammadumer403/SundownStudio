@@ -1,0 +1,231 @@
+*{
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+}
+h4::after {
+  content: "";
+  width: 100%;
+  height: 110%;
+  background: black;
+  position: absolute;
+  bottom: -110%;
+  border-radius: 50%;
+  transition: 0.7s all cubic-bezier(0.19, 1, 0.22, 1);
+  
+  left: 0;
+}
+h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+h4:hover a {
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+.hero-shape {
+
+  right: -1%;
+  background: rgb(254, 51, 11);
+  background: linear-gradient(
+    18deg,
+    rgba(254, 51, 11, 1) 60%,
+    rgb(255, 93, 18) 40%
+  );
+  z-index: 3;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(15px);
+  position: absolute;
+  top: 72vh;
+}
+.hero {
+ 
+  background: #fe330b;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+.hero-2,
+.hero-3 {
+  border-radius: 50%;
+}
+.hero-2 {
+  animation: anmie 2s linear alternate infinite;
+}
+.hero-3 {
+  animation: anmie2 2s linear alternate infinite;
+}
+@keyframes anmie {
+  from {
+    transform: translate(-22%, -10%);
+  }
+  to {
+    transform: translate(-10%, 10%);
+  }
+}
+@keyframes anmie2 {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(-40%, -15%);
+  }
+}
+@keyframes moving {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-100% - 4px));
+  }
+}
+.page2-shape {
+  background: rgb(254, 51, 11);
+  background: linear-gradient(220deg, #ff9831 20%, #fe330b 80%);
+  width: 30vmax;
+  height: 30vmax;
+  border-radius: 100%;
+  filter: blur(20px);
+  position: absolute;
+  top: 60vh;
+  left: 15vw;
+  animation: anmie3 5s linear alternate infinite;
+}
+.shape {
+  background: rgb(254, 51, 11);
+
+  width: 35vmax;
+  height: 35vmax;
+  position: absolute;
+  border-radius: 50%;
+}
+.elem:hover .img {
+  opacity: 1;
+}
+.light {
+  transition: 0.3s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+.elem:hover .light {
+  height: 100%;
+  transition: 0.6s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.shape-1 {
+  animation: anmie3 2s linear alternate infinite;
+}
+@keyframes anmie3 {
+  from {
+    transform: translate(0%, -5%);
+  }
+  to {
+    transform: translate(-10%, 5%);
+  }
+}
+.swiper {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 1%;
+}
+
+.gooey-head {
+  position: relative;
+  background: #ff9831;
+  background: linear-gradient(152deg, #ff9831, #fe330a 43%);
+  z-index: 9;
+  border-radius: 50px;
+
+  animation: anmie4 2s linear infinite alternate;
+  filter: blur(25px);
+}
+.gooey {
+  background: #ff9831;
+  position: absolute;
+  display: none;
+  background: linear-gradient(152deg, #ff9831, #fe330a 43%);
+  height: 60vh !important;
+}
+.gooey-1 {
+  display: block;
+  position: absolute;
+  top: -80%;
+  left: -20%;
+  transform: skewY(-40deg);
+  animation-name: anmie5;
+  animation-delay: 3s;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 50px;
+}
+.gooey-3 {
+  display: block;
+  position: absolute;
+  top: -30%;
+  right: -20%;
+  transform: skewY(40deg);
+  animation-name: anmie6;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 50px;
+}
+@keyframes anmie4 {
+  from {
+    transform: translateY(0) skewY(0deg);
+  }
+  to {
+    transform: translateY(-20%) skewY(4deg);
+  }
+}
+@keyframes anmie5 {
+  from {
+    transform: translateX(0) skewY(-40deg);
+  }
+  to {
+    transform: translateX(20%) skewY(-50deg);
+  }
+}
+@keyframes anmie6 {
+  from {
+    transform: translateX(0%) skewY(40deg);
+  }
+  to {
+    transform: translateX(-28%) skewY(40deg);
+  }
+}
+.loader h1{
+   background: linear-gradient(152deg, #ff9831, #fe330a 43%);
+   color: transparent;
+   background-clip: text;
+   animation: loading 1s  linear ;
+}
+.loader h1:nth-child(2){
+  
+  animation-delay: 1s;
+}
+.loader h1:nth-child(3){
+ 
+  animation-delay: 2s;
+}
+@keyframes loading {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
