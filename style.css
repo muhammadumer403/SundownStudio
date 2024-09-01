@@ -17,6 +17,24 @@ h4::after {
   
   left: 0;
 }
+.bottom-end{
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.6vmax;
+    font-family: sans-serif ;
+    color: white;
+    border-top: 2px solid white;
+    width: 95%;
+    margin: 3vmax auto;
+}
+.bottom-end h3 span{
+    font-style: italic;
+
+}
+.bottom-end h3{
+    font-family: sans-serif;
+}
 h4:hover::after {
   bottom: 0;
   border-radius: 0;
