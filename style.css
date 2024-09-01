@@ -18,14 +18,15 @@ h4::after {
   left: 0;
 }
 .bottom-end{
-    height: 10vh;
+    height: 1vh;
     display: grid;
     place-items: center;
     font-size: 1.6vmax;
     font-family: sans-serif ;
-    color: white;
-    border-top: 2px solid white;
-    width: 95%;
+    color: #f4f4f5;
+    padding: 1vmax 0;
+    border-top: 2px solid #333;
+    width: 100%;
     margin: 3vmax auto;
 }
 .bottom-end h3 span{
