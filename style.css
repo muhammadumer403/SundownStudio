@@ -27,7 +27,7 @@ h4::after {
     padding: 1vmax 0;
     border-top: 2px solid #333;
     width: 100%;
-    margin: 3vmax auto;
+    margin: 1vmax auto;
 }
 .bottom-end h3 span{
     font-style: italic;
